@@ -48,6 +48,6 @@ inp.addEventListener('input', () => {
   if (filteredCountries) {
     filteredCountries.forEach(getCountries);
   } else {
-    countriess.textContent = "Hech narsa topilmadi"
+    countriess.textContent = "Hech narsa topilmadi";
   }
 });
