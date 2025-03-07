@@ -49,6 +49,10 @@ body {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 0 10px 10px #89898923;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
 }
 .wrt {
   padding: 10px;
