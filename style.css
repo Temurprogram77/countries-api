@@ -68,3 +68,9 @@ body {
   border-radius: 10px;
   border: 2px solid #07132a;
 }
+select option {
+  border: 2px solid #07132a;
+}
+option:focus {
+  background: red;
+}
