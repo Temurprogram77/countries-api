@@ -46,10 +46,16 @@ inp.addEventListener('input', () => {
   
   countriess.innerHTML = "";
 
-  let filteredCountries = countries.filter(country => country.toLowerCase().includes(searchTerm));
-  if (filteredCountries) {
+  let filteredCountries = countries.filter(country => {
+    return country.toLowerCase().includes(searchTerm)
+  });
+  console.log(filteredCountries);
+  
+  if (filteredCountries.length > 0) {
     filteredCountries.forEach(getCountries);
+    console.log(countries.length);
+    
   } else {
-    countriess.textContent = "Hech narsa topilmadi";
+    countriess.textContent = "Hech narsa topilmadi"
   }
 });
