@@ -28,14 +28,14 @@ const getCountries = function (countryName) {
   });
 };
 
-let countries = ["algeria", "angola", "benin", "botswana", "burkina faso", "burundi",
-  "cape verde", "cameroon", "central african republic", "chad", "comoros", "congo",
-  "djibouti", "egypt", "eritrea", "eswatini", "ethiopia", "gabon", "gambia",
-  "ghana", "guinea", "ivory coast", "kenya", "lesotho", "liberia", "libya",
-  "madagascar", "malawi", "mali", "mauritania", "morocco", "mozambique",
-  "namibia", "niger", "nigeria", "rwanda", "senegal", "seychelles", "sierra leone",
-  "somalia", "south africa", "south sudan", "sudan", "tanzania", "togo", "tunisia",
-  "uganda", "zambia", "zimbabwe"];
+// let countries = ["algeria", "angola", "benin", "botswana", "burkina faso", "burundi",
+//   "cape verde", "cameroon", "central african republic", "chad", "comoros", "congo",
+//   "djibouti", "egypt", "eritrea", "eswatini", "ethiopia", "gabon", "gambia",
+//   "ghana", "guinea", "ivory coast", "kenya", "lesotho", "liberia", "libya",
+//   "madagascar", "malawi", "mali", "mauritania", "morocco", "mozambique",
+//   "namibia", "niger", "nigeria", "rwanda", "senegal", "seychelles", "sierra leone",
+//   "somalia", "south africa", "south sudan", "sudan", "tanzania", "togo", "tunisia",
+//   "uganda", "zambia", "zimbabwe"];
 
 countries.forEach(getCountries);
 
