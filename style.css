@@ -84,7 +84,7 @@ option:checked {
 }
 
 .select-selected {
-  background-color: DodgerBlue;
+  background-color: rgb(127, 127, 127);
 }
 
 /*style the arrow inside the select element:*/
@@ -118,7 +118,7 @@ option:checked {
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color: rgb(168, 168, 168);
   top: 100%;
   left: 0;
   right: 0;
