@@ -45,5 +45,9 @@ inp.addEventListener('input', () => {
   countriess.innerHTML = "";
 
   let filteredCountries = countries.filter(country => country.toLowerCase().includes(searchTerm));
-  filteredCountries.forEach(getCountries);
+  if (filteredCountries) {
+    filteredCountries.forEach(getCountries);
+  } else {
+    countriess.textContent = "Hech narsa topilmadi"
+  }
 });
