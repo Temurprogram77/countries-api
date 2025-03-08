@@ -261,8 +261,11 @@ inp.addEventListener("input", () => {
   console.log(filteredCountries);
 
   if (filteredCountries.length > 0) {
-    filteredCountries.forEach(getCountries);
-    console.log(countries.length);
+    countriess.textContent = "Loading ...";
+    setTimeout(() => {
+      countriess.textContent = "";
+      filteredCountries.forEach(getCountries);
+    }, 1000);
   } else {
     countriess.textContent = "Hech narsa topilmadi";
   }
