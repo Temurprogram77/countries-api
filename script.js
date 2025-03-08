@@ -265,12 +265,12 @@ inp.addEventListener("input", () => {
     setTimeout(() => {
       countriess.innerHTML = "";
       filteredCountries.forEach(getCountries);
-    }, 1000);
+    }, 700);
   } else {
     countriess.innerHTML = `<h2>Loading ...</h2>`;
     setTimeout(() => {
       countriess.innerHTML = "";
-      countriess.innerHTML = "<h2>Hech narsa topilmadi</h2>";
-    }, 1000);
+      countriess.innerHTML = "<h2>Hech narsa topilmadi !</h2>";
+    }, 700);
   }
 });
