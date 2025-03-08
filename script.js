@@ -275,5 +275,14 @@ inp.addEventListener("input", () => {
   }
 });
 
-let option1 = document.querySelector("option1");
-let option2 = document.querySelector("option2");
+let option1 = document.querySelector(".option1");
+let option2 = document.querySelector(".option2");
+
+option1.addEventListener("change", ()=>{
+  console.log("salom");
+  countries.sort((a, b) => {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
+  });
+  countriess.innerHTML = "";
+  countries.forEach(getCountries);
+})
