@@ -275,21 +275,3 @@ inp.addEventListener("input", () => {
   }
 });
 
-let selectElement = document.querySelector("select");
-
-selectElement.addEventListener("change", function () {
-  let selectedValue = selectElement.value;
-
-  if (selectedValue === "1") {
-    countries.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-  } else if (selectedValue === "2") {
-    countries.sort((a, b) => {
-      let popA = countryList.includes(a) ? countryList[a] : 0;
-      let popB = countryList.includes(b) ? countryList[b] : 0;
-      return popB - popA;
-    });
-  }
-
-  countriess.innerHTML = "";
-  countries.forEach(getCountries);
-});
