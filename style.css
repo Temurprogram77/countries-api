@@ -133,3 +133,9 @@ option:checked {
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}

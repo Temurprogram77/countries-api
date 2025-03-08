@@ -17,7 +17,7 @@ const getCountries = function (countryName) {
             <img src="${data.flags.png}" alt="flag">
         </div>
         <div class="wrt">
-            <h2 class="name">${data.name.common}</h2>
+            <h3 class="name">${data.name.common}</h3>
             <p class="population">Population: ${(
               data.population / 1_000_000
             ).toFixed(1)} mln</p>
@@ -261,12 +261,16 @@ inp.addEventListener("input", () => {
   console.log(filteredCountries);
 
   if (filteredCountries.length > 0) {
-    countriess.textContent = "Loading ...";
+    countriess.innerHTML = `<h2>Loading ...</h2>`;
     setTimeout(() => {
-      countriess.textContent = "";
+      countriess.innerHTML = "";
       filteredCountries.forEach(getCountries);
     }, 1000);
   } else {
-    countriess.textContent = "Hech narsa topilmadi";
+    countriess.innerHTML = `<h2>Loading ...</h2>`;
+    setTimeout(() => {
+      countriess.innerHTML = "";
+      countriess.textContent = "Hech narsa topilmadi";
+    }, 1000);
   }
 });
