@@ -270,7 +270,7 @@ inp.addEventListener("input", () => {
     countriess.innerHTML = `<h2>Loading ...</h2>`;
     setTimeout(() => {
       countriess.innerHTML = "";
-      countriess.textContent = "Hech narsa topilmadi";
+      countriess.innerHTML = "<h2>Hech narsa topilmadi</h2>";
     }, 1000);
   }
 });
