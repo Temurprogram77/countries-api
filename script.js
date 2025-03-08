@@ -274,3 +274,6 @@ inp.addEventListener("input", () => {
     }, 700);
   }
 });
+
+let option1 = document.querySelector("option1");
+let option2 = document.querySelector("option2");
