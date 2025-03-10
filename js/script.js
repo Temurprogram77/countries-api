@@ -2,16 +2,8 @@ let countriess = document.querySelector(".countries");
 let inp = document.querySelector(".inp input");
 let countryList = [];
 
-const getCountries = function (countryName) {
-  const request = new XMLHttpRequest();
-  request.open("GET", `https://restcountries.com/v3.1/name/${countryName}`);
-  request.send();
-  request.addEventListener("load", () => {
-    let [data] = JSON.parse(request.responseText);
-
-    countryList.push(data.name.common.toLowerCase());
-
-    let html = `
+const cardFunc = function (info) {
+  let html = `
     <div class="card">
         <div class="image">
             <img src="${data.flags.png}" alt="flag">
@@ -30,7 +22,21 @@ const getCountries = function (countryName) {
         </div>
     </div>
     `;
-    countriess.insertAdjacentHTML("beforeend", html);
+  countriess.insertAdjacentHTML("beforeend", html);
+};
+
+const getCountries = function (countryName) {
+  const request = new XMLHttpRequest();
+  request.open("GET", `https://restcountries.com/v3.1/name/${countryName}`);
+  request.send();
+  request.addEventListener("load", () => {
+    let [data] = JSON.parse(request.responseText);
+
+    // countryList.push(data.name.common.toLowerCase());
+
+    cardFunc(data);
+    const request2 = new XMLHttpRequest();
+    request2.open("GET", "https://restcountries/v3.1/alpha/{us}");
   });
 };
 
