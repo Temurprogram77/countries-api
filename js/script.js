@@ -248,8 +248,6 @@ let countries = [
 
 countries.forEach(getCountries);
 
-let body = document.querySelector("body");
-
 inp.addEventListener("input", () => {
   const searchTerm = inp.value.toLowerCase();
 
